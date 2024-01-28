@@ -19,6 +19,8 @@ public class FtpTest {
 				System.out.println("login success");
 			}
 			
+			client.enterLocalPassiveMode();
+			
 			// 파일업로드
 			File newFile = new File("C:/test/newFile.txt");
 			newFile.createNewFile();
