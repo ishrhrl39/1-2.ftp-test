@@ -11,7 +11,7 @@ public class FtpTest {
 	public static void main(String[] args) {
 		FTPClient client = new FTPClient();
 		try {
-			client.connect("112.175.85.159", 21);
+			client.connect("INSERT IP", 21);
 			if (!client.login(getId(), getPassword())) {          // id와 password을 문자열로 작성, 예: client.login("test", "1234")
 				System.out.println("login fail.");          
 				return;        
@@ -59,10 +59,10 @@ public class FtpTest {
 	
 	
 	private static String getPassword() {
-		return "Mnwise4210!@";
+		return "";
 	}
 
 	private static String getId() {
-		return "mnwiseces";
+		return "";
 	}
 }

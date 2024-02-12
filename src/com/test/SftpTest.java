@@ -14,7 +14,7 @@ public class SftpTest {
 		JSch jsch = new JSch();
         Session session = null;
 		try {
-			session = jsch.getSession(getId(), "112.175.85.159", 22);
+			session = jsch.getSession(getId(), "INSERT IP", 22);
 			session.setPassword(getPassword());
 	        java.util.Properties config = new java.util.Properties();
 	        config.put("StrictHostKeyChecking", "no");
@@ -47,10 +47,10 @@ public class SftpTest {
 	}
 
 	private static String getPassword() {
-		return "Mnwise4210!@";
+		return "";
 	}
 
 	private static String getId() {
-		return "mnwiseces";
+		return "";
 	}
 }
